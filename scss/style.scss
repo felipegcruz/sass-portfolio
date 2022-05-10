@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "modal";
 
 * {
   box-sizing: border-box;
@@ -125,6 +126,7 @@ main {
   img {
     width: 100%;
     border: 1px $white solid;
+    border-radius: 5px;
 
     &:hover {
       opacity: 0.5;
@@ -176,12 +178,14 @@ main {
   @extend .btn;
   background: darken($primary-color, $amount: 50);
   color: #fff;
+  border-radius: 10px;
 }
 
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, $amount: 50);
   color: #333;
+  border-radius: 10px;
 }
 
 #main-footer {

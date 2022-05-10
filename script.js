@@ -25,3 +25,29 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// Modal
+const modal = document.getElementById("myModal");
+// to all images
+const images = document.getElementsByClassName("myImages");
+// the image in the modal
+const modalImg = document.getElementById("img01");
+// and the caption in the modal
+const captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+
+  img.onclick = function (evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  };
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
