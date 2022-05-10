@@ -35,7 +35,6 @@ const modalImg = document.getElementById("img01");
 // and the caption in the modal
 const captionText = document.getElementById("caption");
 
-// Go through all of the images with our custom class
 for (var i = 0; i < images.length; i++) {
   var img = images[i];
 
