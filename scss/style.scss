@@ -89,8 +89,14 @@ main {
   .bio-image {
     grid-area: bioimage;
     margin: auto;
+    width: 250px;
+    height: 250px;
+    background: url(/img/felipe_profile.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: solid 3px $secondary-color;
   }
 
   .bio {
